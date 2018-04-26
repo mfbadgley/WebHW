@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang ="en-us">
+<head>
+
+
+    <meta charset ="utf-8">
+    <title> Home </title>
+   <link rel="stylesheet" type="text/css" href="https://mfbadgley.github.io-WebHW/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               
+                <a href="#" class="navbar-brand" id="lattitude" >Latitude</a>
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+                       <li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                                <b class="caret"></b>
+                              </a>
+                              
+                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                 <ul>
+                             <li> <a class="dropdown-item" href="https://mfbadgley.github.io-WebHW/windspeed_lat.html" target ="blank">Windspeed</a></li>
+                              <li> <a class="dropdown-item" href="https://mfbadgley.github.io-WebHW/Temp_lat.html" target ="blank">Temperature</a></li>
+                               <li><a class="dropdown-item" href="https://mfbadgley.github.io-WebHW/cloudiness_lat.html" target ="blank">Cloudiness</a></li>
+                                <li><a class="dropdown-item" href="https://mfbadgley.github.io-WebHW/humidity_lat.html" target ="blank">Humidity</a></li>
+                            </ul>   
+                              </div>
+                            </li> 
+                        <li><a href="https://mfbadgley.github.io-WebHW/comparisons.html">Comparison</a></li>
+                    <li><a href="https://mfbadgley.github.io-WebHW/data.html">Data</a></li>
+                    <li>&nbsp &nbsp</li><!--creates blank spaces-->
+
+                                     
+        </div>
+    </nav>
+                </head>
+
+
+<body>
+     <div class ="container-fluid">
+
+            <div class = "row">
+
+                <div class="col-md-7">
+                   <div class="panel panel-default" id="panelone">
+                         <div class="panel-body" id="panelonebody">
+                               
+                                    <h3> Latitudes Vs X </h3>
+                                    <hr>
+                                        <img class="col-xs-9" src ="https://mfbadgley.github.io-WebHW/windspeeds_latitudes.png" alt=" windspeeds_latitudes">
+                                        <p>In this exercise, we created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. 
+                                            To accomplish this, we utilized a simple Python library, the OpenWeatherMap API, and a little common sense to create a 
+                                            representative model of weather across world cities. The steps included randomly selecting at least 500 unique (non-repeat) cities based on latitude and longitude.
+                                            Performing a weather check on each of the cities using a series of successive API calls. 
+                                            The data was saved in both a CSV file and png images for each of the scatter plots shown here. This is an example of the Windspeeds of randomly selected cities vs their latitudes.</p>
+                                     </div>  
+                        
+                                    
+                                             </div>
+                                             </div>
+                    
+            <div class="col-md-5">
+              <div class="panel panel-default" id="paneltwo">
+                    <div class="panel-body" id="paneltwobody">
+                            <h3>Visualizations</h3>
+                            <hr>
+                          
+                            <div class= "col-xs-6">
+                            <a href="https://mfbadgley.github.io-WebHW/windspeed_lat.html"><img src ="windspeeds_latitudes.png" alt="windspeeds_latitudes" style= width:100%></a>
+                        
+                           <a href ="https://mfbadgley.github.io-WebHW/humidity_lat.html"> <img src ="humidity_latitudes.png" alt=" humidity_latitudes" style = width:100%></a>
+                        </div>
+                    
+                   
+               
+                        <div class= "col-xs-6">
+                          <a href="https://mfbadgley.github.io-WebHW/cloudiness_lat.html">  <img src ="cloudiness_latitudes.png" alt=" cloudiness_latitudes" style= width:100%></a>
+                     
+                          <a href="https://mfbadgley.github.io-WebHW/temp_lat.html"> <img src ="temps_latitudes.png" alt=" temps_latitudes" style= width:100%></a>
+                       
+                        </div>
+                    
+                    </div>
+                  </div>
+                  </div>
+
+               
+    </div>
+                
+              
+                  <div class="footer">
+                        <p> &copy; Copyright 2018</p>
+                      </div>
+           
+   
+
+    
+    
+
+
+
+
+      
+    </body>
+</html>
